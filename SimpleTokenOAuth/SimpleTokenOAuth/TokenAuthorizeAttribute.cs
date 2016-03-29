@@ -37,7 +37,7 @@
             }
 
             // Getting the config values
-            var config = SimpleTokenAuthConfiguration.Instance;
+            var config = SimpleTokenOAuthConfiguration.Instance;
 
             // Checking the config and Token Count
             if (config == null || !config.IsEnabled || config.Tokens == null || config.Tokens.Count == 0)

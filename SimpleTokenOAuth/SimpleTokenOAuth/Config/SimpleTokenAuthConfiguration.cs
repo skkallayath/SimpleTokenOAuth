@@ -6,23 +6,23 @@
     /// <summary>
     /// The Simple Token Auth Configuration
     /// </summary>
-    public class SimpleTokenAuthConfiguration : ConfigurationSection
+    public class SimpleTokenOAuthConfiguration : ConfigurationSection
     {
         /// <summary>
         /// The private instance
         /// </summary>
-        private static SimpleTokenAuthConfiguration _instance;
+        private static SimpleTokenOAuthConfiguration _instance;
 
         /// <summary>
         /// The Singleton Instance
         /// </summary>
-        public static SimpleTokenAuthConfiguration Instance
+        public static SimpleTokenOAuthConfiguration Instance
         {
             get
             {
                 if (_instance == null)
                 {
-                    _instance = (SimpleTokenAuthConfiguration)WebConfigurationManager.GetSection("simpleTokenAuth");
+                    _instance = (SimpleTokenOAuthConfiguration)WebConfigurationManager.GetSection("simpleTokenAuth");
                 }
                 return _instance;
             }

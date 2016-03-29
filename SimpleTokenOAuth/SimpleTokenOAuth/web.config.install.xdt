@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <configSections xdt:Transform="InsertBefore(/configuration/*[1])" xdt:Locator="Condition(not(.))"/>
+  <configSections xdt:Locator="XPath(/configuration/configSections[last()])">
+    <section name="simpleTokenAuth" type="SimpleTokenOAuth.Config.SimpleTokenOAuthConfiguration" requirePermission="false" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing"/>
+  </configSections>
+  <configSections xdt:Transform="RemoveAll" xdt:Locator="Condition(count(*)=0)" />
+  <simpleTokenAuth enabled="true" xdt:Transform="InsertIfMissing">
+    <Tokens xdt:Transform="InsertIfMissing">
+      <add token="a42f8c10e60f2bf7062f78df5c1772fb" info="custominfo" allow="false" xdt:Transform="InsertIfMissing" xdt:Locator="Match(token)"/>
+    </Tokens>
+  </simpleTokenAuth>
+</configuration>
